@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Icons -->
@@ -23,279 +23,197 @@
 </head>
 
 <body>
+    <!-- Cursor Follower -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">
-                <span class="logo-text">GD</span>
-            </a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <nav class="nav">
+        <a href="#home" class="nav-brand">GD</a>
+        <div class="nav-links" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
         </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <span class="hero-intro">Welcome</span>
-                    <h1 class="hero-title">
-                        <span class="name">Gurudharani N</span>
-                        <span class="role">Cloud Engineer</span>
-                    </h1>
-                    <p class="hero-description">
-                        Computer Science student at Kumaraguru College of Technology with a passion for building
-                        scalable cloud infrastructure and automating deployment pipelines. Aspiring DevOps Engineer
-                        focused on bridging development and operations.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                    </div>
+        <div class="hero-grid">
+            <div class="hero-intro">
+                <span class="hero-tag">Cloud Engineer</span>
+                <h1>
+                    <span class="hero-line">Hello, I'm</span>
+                    <span class="hero-name">Gurudharani</span>
+                </h1>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="my-cartoon.png" alt="Gurudharani N">
                 </div>
-                <div class="hero-visual">
-                    <div class="profile-wrapper">
-                        <div class="profile-frame"></div>
-                        <div class="profile-frame-inner"></div>
-                        <div class="profile-container">
-                            <img src="my-cartoon.png" alt="Gurudharani N" class="profile-image">
-                        </div>
-                    </div>
+                <div class="image-accent"></div>
+            </div>
+            <div class="hero-desc">
+                <p>Computer Science student at KCT, passionate about cloud infrastructure, automation, and building
+                    systems that scale. Currently exploring the world of DevOps.</p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn-pill">See my work</a>
+                    <a href="#contact" class="btn-text">
+                        <span>Let's talk</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-arrow"></div>
+        <div class="scroll-hint">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">About Me</span>
-                <h2 class="section-title">Building the Future of Cloud</h2>
-                <p class="section-subtitle">
-                    I am a passionate Computer Science student with a strong focus on cloud technologies and automation.
-                    My goal is to become a skilled DevOps Engineer, designing secure, scalable infrastructure and
-                    ensuring smooth, reliable deployments through efficient CI/CD pipelines.
-                </p>
+        <div class="section-intro">
+            <span class="section-num">01</span>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-lead">I believe in building infrastructure that just works.</p>
+                <p>As an aspiring DevOps Engineer, I focus on bridging the gap between development and operations. I
+                    design secure, scalable cloud architectures and automate everything from CI/CD pipelines to
+                    infrastructure provisioning.</p>
             </div>
 
-            <div class="skills-section">
-                <h3>Technical Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill-item fade-in">
-                        <div class="skill-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <span>Python</span>
-                    </div>
-                    <div class="skill-item fade-in">
-                        <div class="skill-icon">
-                            <i class="fab fa-aws"></i>
-                        </div>
-                        <span>AWS</span>
-                    </div>
-                    <div class="skill-item fade-in">
-                        <div class="skill-icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <span>HTML</span>
-                    </div>
-                    <div class="skill-item fade-in">
-                        <div class="skill-icon">
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-                        <span>CSS</span>
-                    </div>
-                    <div class="skill-item fade-in">
-                        <div class="skill-icon">
-                            <i class="fab fa-git-alt"></i>
-                        </div>
-                        <span>Git</span>
-                    </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-linux"></i>
+                    <span>Linux</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Portfolio</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">
-                    A selection of my recent cloud architecture and infrastructure projects.
-                </p>
-            </div>
+    <!-- Work -->
+    <section id="work" class="work">
+        <div class="section-intro">
+            <span class="section-num">02</span>
+            <h2>Selected Work</h2>
+        </div>
 
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <article class="project-card fade-in">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-cloudcomputing-vpc-activity-7316828684156338176-FjrI"
-                                target="_blank" rel="noopener noreferrer" class="project-link"
-                                aria-label="View on LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
+        <div class="project-list">
+            <!-- Project 1 -->
+            <article class="project">
+                <div class="project-index">01</div>
+                <div class="project-info">
+                    <h3>Bastion Host Architecture</h3>
+                    <p>Secure AWS network with controlled SSH access to private EC2 instances through a public
+                        subnet
+                        bastion.</p>
+                    <div class="project-tags">
+                        <span>VPC</span>
+                        <span>EC2</span>
+                        <span>IAM</span>
                     </div>
-                    <h3 class="project-title">Secure EC2 Access via Bastion Host</h3>
-                    <p class="project-description">
-                        Configured a secure AWS network architecture using a Bastion Host in the public subnet to
-                        provide controlled SSH access to EC2 instances in a private subnet.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">AWS VPC</span>
-                        <span class="tech-tag">EC2</span>
-                        <span class="tech-tag">IAM</span>
-                        <span class="tech-tag">Security Groups</span>
-                    </div>
-                </article>
+                </div>
+                <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-cloudcomputing-vpc-activity-7316828684156338176-FjrI"
+                    target="_blank" rel="noopener" class="project-link">
+                    View
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
 
-                <!-- Project 2 -->
-                <article class="project-card fade-in">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-iqube-cloudcomputing-activity-7336043047236816896-WaP0"
-                                target="_blank" rel="noopener noreferrer" class="project-link"
-                                aria-label="View on LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
+            <!-- Project 2 -->
+            <article class="project">
+                <div class="project-index">02</div>
+                <div class="project-info">
+                    <h3>S3 Static Hosting</h3>
+                    <p>Static website deployment on S3 with CORS configuration and automated lifecycle
+                        management.</p>
+                    <div class="project-tags">
+                        <span>S3</span>
+                        <span>CORS</span>
+                        <span>Lifecycle</span>
                     </div>
-                    <h3 class="project-title">Static Website Hosting with S3</h3>
-                    <p class="project-description">
-                        Hosted a responsive static website on Amazon S3 with public access, configured CORS policies,
-                        and automated storage class transitions using lifecycle rules.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">AWS S3</span>
-                        <span class="tech-tag">CORS</span>
-                        <span class="tech-tag">Lifecycle Rules</span>
-                        <span class="tech-tag">HTML/CSS</span>
-                    </div>
-                </article>
+                </div>
+                <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-iqube-cloudcomputing-activity-7336043047236816896-WaP0"
+                    target="_blank" rel="noopener" class="project-link">
+                    View
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
 
-                <!-- Project 3 -->
-                <article class="project-card fade-in">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-s3-cloudproject-activity-7323186874519302162-7Ax7"
-                                target="_blank" rel="noopener noreferrer" class="project-link"
-                                aria-label="View on LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
+            <!-- Project 3 -->
+            <article class="project">
+                <div class="project-index">03</div>
+                <div class="project-info">
+                    <h3>3-Tier Architecture</h3>
+                    <p>Highly available infrastructure with VPC, ALB, Auto Scaling, and Aurora database.</p>
+                    <div class="project-tags">
+                        <span>Aurora</span>
+                        <span>ALB</span>
+                        <span>Auto Scaling</span>
                     </div>
-                    <h3 class="project-title">AWS 3-Tier Architecture</h3>
-                    <p class="project-description">
-                        Deployed a highly available 3-tier architecture using VPC, public/private subnets, EC2, Bastion
-                        Host, Application Load Balancer, and Amazon Aurora database.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Amazon Aurora</span>
-                        <span class="tech-tag">ALB</span>
-                        <span class="tech-tag">Auto Scaling</span>
-                        <span class="tech-tag">Bastion Host</span>
-                    </div>
-                </article>
-            </div>
+                </div>
+                <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-s3-cloudproject-activity-7323186874519302162-7Ax7"
+                    target="_blank" rel="noopener" class="project-link">
+                    View
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Contact</span>
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle">
-                    Open to discussing new opportunities, collaborations, and interesting projects.
-                </p>
-            </div>
+        <div class="contact-content">
+            <span class="section-num">03</span>
+            <h2>Let's Build<br>Something Together</h2>
+            <p>Open to opportunities, collaborations, and interesting conversations about cloud and DevOps.</p>
 
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item fade-in">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <a href="mailto:dharanniguru9@gmail.com">dharanniguru9@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-item fade-in">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/gurudharani-n-894008333" target="_blank"
-                                rel="noopener noreferrer">Connect with me</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-item fade-in">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>GitHub</h4>
-                            <a href="https://github.com/Dharani3110" target="_blank" rel="noopener noreferrer">View my
-                                repos</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="contact-links">
+                <a href="mailto:dharanniguru9@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>dharanniguru9@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/gurudharani-n-894008333" target="_blank" rel="noopener"
+                    class="contact-card">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Dharani3110" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>2026 Gurudharani N. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/gurudharani-n-894008333" target="_blank"
-                        rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/Dharani3110" target="_blank" rel="noopener noreferrer"
-                        aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:dharanniguru9@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <p>Designed with intention</p>
+        <p>2026</p>
     </footer>
 
     <script src="script.js"></script>
