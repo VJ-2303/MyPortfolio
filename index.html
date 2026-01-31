@@ -1,29 +1,41 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gurudharani N - Cloud Enthusiast & CS Student</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <title>Gurudharani N | Cloud Engineer</title>
+    <meta name="description"
+        content="Portfolio of Gurudharani N - Computer Science student specializing in cloud technologies and DevOps.">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a href="#home" class="nav-logo">
                 <span class="logo-text">GD</span>
-            </div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -36,45 +48,35 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <span class="hero-intro">Welcome</span>
                     <h1 class="hero-title">
-                        <span class="fade-in-up">Hi, I'm</span>
-                        <span class="gradient-text fade-in-up delay-1">Gurudharani N</span>
+                        <span class="name">Gurudharani N</span>
+                        <span class="role">Cloud Engineer</span>
                     </h1>
-                    <p class="hero-description fade-in-up delay-3">
-                        I'm a passionate CS student at Kumaraguru College of Technology, exploring the world of code, cloud, and creativity. I build modern cloud-based applications and enjoy solving real-world problems using scalable cloud technologies.
+                    <p class="hero-description">
+                        Computer Science student at Kumaraguru College of Technology with a passion for building
+                        scalable cloud infrastructure and automating deployment pipelines. Aspiring DevOps Engineer
+                        focused on bridging development and operations.
                     </p>
-                    <div class="hero-buttons fade-in-up delay-4">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <!-- Replaced floating code snippet with animated profile picture -->
-                    <div class="profile-section">
-                        <!-- Pulse rings for animated effect -->
-                        <div class="pulse-ring"></div>
-                        <div class="pulse-ring"></div>
-                        <div class="pulse-ring"></div>
-                        
-                        <!-- Main profile container -->
+                    <div class="profile-wrapper">
+                        <div class="profile-frame"></div>
+                        <div class="profile-frame-inner"></div>
                         <div class="profile-container">
                             <img src="my-cartoon.png" alt="Gurudharani N" class="profile-image">
                         </div>
-                        
-                        <!-- Floating tech elements -->
-                        <div class="floating-element">Python</div>
-                        <div class="floating-element">AWS</div>
                     </div>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
-            </div>
         </div>
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
@@ -82,44 +84,47 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">I'm a passionate Computer Science student with a strong interest in cloud technologies and automation. My aim is to become a skilled DevOps Engineer, bridging the gap between development and operations by designing secure, scalable, and automated infrastructure. I thrive on building efficient CI/CD pipelines, managing cloud environments, and ensuring smooth, reliable deployments.</p>
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Building the Future of Cloud</h2>
+                <p class="section-subtitle">
+                    I am a passionate Computer Science student with a strong focus on cloud technologies and automation.
+                    My goal is to become a skilled DevOps Engineer, designing secure, scalable infrastructure and
+                    ensuring smooth, reliable deployments through efficient CI/CD pipelines.
+                </p>
             </div>
-            
-            <div class="about-content">
-                <div class="skills-section">
-                    <h3>Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <span>Python</span>
+
+            <div class="skills-section">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-aws"></i>
-                            </div>
-                            <span>AWS</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-aws"></i>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <span>HTML</span>
+                        <span>AWS</span>
+                    </div>
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                            <span>CSS</span>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-git-alt"></i>
-                            </div>
-                            <span>Git & GitHub</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
                         </div>
+                        <span>Git</span>
                     </div>
                 </div>
             </div>
@@ -130,25 +135,32 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
+                <span class="section-label">Portfolio</span>
                 <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Here are some of my recent cloud architecture projects</p>
+                <p class="section-subtitle">
+                    A selection of my recent cloud architecture and infrastructure projects.
+                </p>
             </div>
-            
+
             <div class="projects-grid">
-                <div class="project-card">
+                <!-- Project 1 -->
+                <article class="project-card fade-in">
                     <div class="project-header">
                         <div class="project-icon">
                             <i class="fas fa-server"></i>
                         </div>
                         <div class="project-links">
-                            <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-cloudcomputing-vpc-activity-7316828684156338176-FjrI" target="_blank" class="project-link">
+                            <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-cloudcomputing-vpc-activity-7316828684156338176-FjrI"
+                                target="_blank" rel="noopener noreferrer" class="project-link"
+                                aria-label="View on LinkedIn">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                     <h3 class="project-title">Secure EC2 Access via Bastion Host</h3>
                     <p class="project-description">
-                        Configured a secure AWS network architecture using a Bastion Host deployed in the public subnet to provide controlled SSH access to EC2 instances running in a private subnet.
+                        Configured a secure AWS network architecture using a Bastion Host in the public subnet to
+                        provide controlled SSH access to EC2 instances in a private subnet.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">AWS VPC</span>
@@ -156,22 +168,26 @@
                         <span class="tech-tag">IAM</span>
                         <span class="tech-tag">Security Groups</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <!-- Project 2 -->
+                <article class="project-card fade-in">
                     <div class="project-header">
                         <div class="project-icon">
                             <i class="fas fa-cloud"></i>
                         </div>
                         <div class="project-links">
-                            <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-iqube-cloudcomputing-activity-7336043047236816896-WaP0" target="_blank" class="project-link">
+                            <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-iqube-cloudcomputing-activity-7336043047236816896-WaP0"
+                                target="_blank" rel="noopener noreferrer" class="project-link"
+                                aria-label="View on LinkedIn">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                     <h3 class="project-title">Static Website Hosting with S3</h3>
                     <p class="project-description">
-                        Hosted a responsive static website on Amazon S3 with public access enabled, configured CORS, and automated storage class changes using S3 lifecycle rules.
+                        Hosted a responsive static website on Amazon S3 with public access, configured CORS policies,
+                        and automated storage class transitions using lifecycle rules.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">AWS S3</span>
@@ -179,22 +195,26 @@
                         <span class="tech-tag">Lifecycle Rules</span>
                         <span class="tech-tag">HTML/CSS</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <!-- Project 3 -->
+                <article class="project-card fade-in">
                     <div class="project-header">
                         <div class="project-icon">
                             <i class="fas fa-database"></i>
                         </div>
                         <div class="project-links">
-                            <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-s3-cloudproject-activity-7323186874519302162-7Ax7" target="_blank" class="project-link">
+                            <a href="https://www.linkedin.com/posts/gurudharani-n-894008333_aws-s3-cloudproject-activity-7323186874519302162-7Ax7"
+                                target="_blank" rel="noopener noreferrer" class="project-link"
+                                aria-label="View on LinkedIn">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                     <h3 class="project-title">AWS 3-Tier Architecture</h3>
                     <p class="project-description">
-                        Deployed a highly available and secure 3-tier architecture on AWS using VPC, public/private subnets, EC2, Bastion Host, Load Balancer, and Amazon Aurora.
+                        Deployed a highly available 3-tier architecture using VPC, public/private subnets, EC2, Bastion
+                        Host, Application Load Balancer, and Amazon Aurora database.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Amazon Aurora</span>
@@ -202,7 +222,7 @@
                         <span class="tech-tag">Auto Scaling</span>
                         <span class="tech-tag">Bastion Host</span>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -211,13 +231,16 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
+                <span class="section-label">Contact</span>
                 <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle">I'm always open to discussing new opportunities and collaborations</p>
+                <p class="section-subtitle">
+                    Open to discussing new opportunities, collaborations, and interesting projects.
+                </p>
             </div>
-            
+
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="contact-item fade-in">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -226,24 +249,26 @@
                             <a href="mailto:dharanniguru9@gmail.com">dharanniguru9@gmail.com</a>
                         </div>
                     </div>
-                    
-                    <div class="contact-item">
+
+                    <div class="contact-item fade-in">
                         <div class="contact-icon">
                             <i class="fab fa-linkedin"></i>
                         </div>
                         <div class="contact-details">
                             <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/gurudharani-n-894008333" target="_blank">Connect with me</a>
+                            <a href="https://www.linkedin.com/in/gurudharani-n-894008333" target="_blank"
+                                rel="noopener noreferrer">Connect with me</a>
                         </div>
                     </div>
-                    
-                    <div class="contact-item">
+
+                    <div class="contact-item fade-in">
                         <div class="contact-icon">
                             <i class="fab fa-github"></i>
                         </div>
                         <div class="contact-details">
                             <h4>GitHub</h4>
-                            <a href="https://github.com/Dharani3110" target="_blank">View my repos</a>
+                            <a href="https://github.com/Dharani3110" target="_blank" rel="noopener noreferrer">View my
+                                repos</a>
                         </div>
                     </div>
                 </div>
@@ -255,11 +280,19 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Gurudharani N. All rights reserved.</p>
+                <p>2026 Gurudharani N. All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/gurudharani-n-894008333" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Dharani3110" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:dharanniguru9@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/gurudharani-n-894008333" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Dharani3110" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:dharanniguru9@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -267,5 +300,5 @@
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
