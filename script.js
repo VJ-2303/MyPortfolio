@@ -7,8 +7,64 @@ document.addEventListener('DOMContentLoaded', function() {
     initTypingEffect();
     initSmoothScrolling();
     initScrollReveal();
+    initProfileInteractions();
     hideLoader();
 });
+
+// Profile section interactive effects
+function initProfileInteractions() {
+    const profileContainer = document.querySelector('.profile-container');
+    const floatingElements = document.querySelectorAll('.floating-element');
+    
+    if (profileContainer && floatingElements.length > 0) {
+        // Mouse follow effect for floating elements
+        profileContainer.addEventListener('mousemove', function(e) {
+            const rect = profileContainer.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            
+            const mouseX = e.clientX - centerX;
+            const mouseY = e.clientY - centerY;
+            
+            floatingElements.forEach((element, index) => {
+                const speed = (index + 1) * 0.02;
+                const x = mouseX * speed;
+                const y = mouseY * speed;
+                
+                element.style.transform = `translate(${x}px, ${y}px)`;
+            });
+        });
+        
+        // Reset positions when mouse leaves
+        profileContainer.addEventListener('mouseleave', function() {
+            floatingElements.forEach(element => {
+                element.style.transform = 'translate(0px, 0px)';
+            });
+        });
+        
+        // Add click animation to profile image
+        const profileImage = document.querySelector('.profile-image');
+        if (profileImage) {
+            profileImage.addEventListener('click', function() {
+                this.style.animation = 'none';
+                setTimeout(() => {
+                    this.style.animation = '';
+                }, 10);
+                
+                // Add a temporary scale effect
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        }
+        
+        // Stagger animation for floating elements on load
+        floatingElements.forEach((element, index) => {
+            element.style.animationDelay = `${index * 0.5}s`;
+        });
+    }
+}
 
 // Navigation functionality
 function initNavigation() {
